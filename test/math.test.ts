@@ -1,4 +1,4 @@
-import { add, multiply } from "../src/math";
+import { add, multiply, subtract } from "../src/math";
 
 describe("Math functions", () => {
   it("should multiply 5 by 3", () => {
@@ -10,4 +10,10 @@ describe("Math functions", () => {
     const result = add(5, 3);
     expect(result).toEqual(8);
   });
+
+  it("should subtract 5 by 3", () => {
+    const result = subtract(5, 3);
+    expect(result).toEqual(2);
+  });
+
 });
