@@ -1,10 +1,7 @@
-export type RandomGenerator = () => number;
+//? Some possible dependency
+//import {secureRandomNumber } from "secureRandomNumber"
+const secureRandomNumber = (max: number) => Math.floor(Math.random() * (max + 1));
+import { fastRandomNumber } from "./fastRandomNumber";
 
-export const makeRandomNumber =
-  (randomGenerator: RandomGenerator) =>
-    (max: number): number => {
-      return Math.floor(randomGenerator() * (max + 1));
-    };
-
-export const randomNumber = makeRandomNumber(Math.random);
-
+export const randomNumber =
+  process.env.NODE_ENV !== "production" ? fastRandomNumber : secureRandomNumber;
