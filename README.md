@@ -5,3 +5,5 @@
 
 ## Part 1
 [link](https://blog.codeminer42.com/dependency-injection-in-js-ts-part-1/)
+
+[at](https://blog.codeminer42.com/dependency-injection-in-js-ts-part-1/#:~:text=the%20client.-,Mock%20Implementations%20In%20Development,-Another%20interesting%20usage)
